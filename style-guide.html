@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<!--  Last Published: Wed Jul 01 2020 04:47:22 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5ef927cc9e89d60b617948e3" data-wf-site="5ef927ccc93f2aca942d1c52">
+<head>
+  <meta charset="utf-8">
+  <title>Diginomaly Style Guide -DDS Components for Webflow</title>
+  <meta content="Diginomaly Style Guide -DDS Components for Webflow" name="description">
+  <meta content="Diginomaly Style Guide -DDS Components for Webflow" property="og:title">
+  <meta content="Diginomaly Style Guide -DDS Components for Webflow" property="og:description">
+  <meta content="Diginomaly Style Guide -DDS Components for Webflow" property="twitter:title">
+  <meta content="Diginomaly Style Guide -DDS Components for Webflow" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/diginomaly-design-system.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Varela Round:400","Cabin:regular,500,500italic,600,600italic,700"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+.menu-body-section {
+    overflow: scroll;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+    border-radius: 15pt;
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #6165ff;
+    border-radius: 15pt;
+}
+/* HOVER */
+menu-body-section:hover { 
+     overflow: scroll;
+    overflow-x: hidden;
+}
+:hover::-webkit-scrollbar {
+    width: 4px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+    border-radius: 15pt;
+}
+/* optional: show position indicator in red */
+:hover::-webkit-scrollbar-thumb {
+    background: #6165ff 0.5s ease;
+    border-radius: 15pt;
+}
+</style>
+</head>
+<body>
+  <div class="product_wrap">
+    <div class="menu_left"><a href="index.html" class="top_block w-inline-block"><img src="images/forest_mark.svg" width="50" alt="" class="logo_forest"></a>
+      <div class="menu_body">
+        <div class="menu_title">
+          <div class="text_block_01">GET STARTED</div>
+        </div>
+        <a href="index.html" class="fp_link w-inline-block">
+          <div class="nav_text">Home</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Overview</div>
+          <div class="button_bar"></div>
+        </a>
+        <div class="menu_title">
+          <div class="text_block_01">ELEMENTS</div>
+        </div>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Colour</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Typography</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Shadow</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Avatars</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Buttons</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Fields</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Selection Fields</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Alert Bars</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Badges</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Icons</div>
+          <div class="button_bar"></div>
+        </a>
+        <div class="menu_title">
+          <div class="text_block_01">COMPONENTS</div>
+        </div>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Navigation</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Headers</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Content</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Features</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Testimonials</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">CTA</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Pricing</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Team</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Clients</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Tabs</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Footers</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">FAQs</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Blog</div>
+          <div class="button_bar"></div>
+        </a>
+        <a href="#" class="fp_link w-inline-block">
+          <div class="nav_text">Modules</div>
+          <div class="button_bar"></div>
+        </a>
+      </div>
+      <div class="buy_wrap"><a href="#" class="button_buy_01 w-button">Download</a></div>
+    </div>
+    <div class="content_section">
+      <div class="fp_block">
+        <div class="lnd_header_container">
+          <div class="tag-s_landing">
+            <div class="div_block_09">
+              <div class="tag_text">1</div>
+            </div>
+            <div class="text_01">Client Version</div>
+          </div>
+          <h1 class="fp_h1">Meet Forest,<span class="lnd_highlight"><br>Client Style Kit</span></h1>
+          <div class="lnd_details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div class="button_buy">
+            <div class="div_block_03">Purchase</div>
+            <div class="div_block_02">
+              <div class="div_block_01"></div>
+              <div>$38</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <h4 class="fp_h4">Introduction</h4>
+          <p class="content_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br></p>
+          <h4 class="fp_h4">Direction</h4>
+          <p class="content_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br></p>
+        </div>
+      </div>
+      <div id="S_Colour" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h2 class="lnd_content_h1">Colour Palette<span class="lnd_highlight"></span></h2>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div id="P_COLOUR" class="lnd_page_content">
+        <div class="container_colour">
+          <div class="fp_title_wrap">
+            <h4 class="fp_h3">Primary Palette</h4>
+            <h6 class="fp_h6">Fill Colours</h6>
+          </div>
+          <div class="colour_wrap_main">
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Brand</div>
+                  <div class="colour_title_text">#7540ee</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c2"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Dodge</div>
+                  <div class="colour_title_text">#5b7fff</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c3"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Shamrock</div>
+                  <div class="colour_title_text">#36b37e</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c4"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Buttercup</div>
+                  <div class="colour_title_text">#ffab00</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c5"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Thunderbird</div>
+                  <div class="colour_title_text">#ff5630</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_colour">
+          <div class="fp_title_wrap">
+            <h4 class="fp_h3">Secondary Palette</h4>
+            <h6 class="fp_h6">Pastel Colours</h6>
+          </div>
+          <div class="colour_wrap_main">
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c6"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Selago</div>
+                  <div class="colour_title_text">#e3d9fc</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c7"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Moon Raker</div>
+                  <div class="colour_title_text">#d5dff7</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c8"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Off Green</div>
+                  <div class="colour_title_text">#e9f9f0</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c9"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Health</div>
+                  <div class="colour_title_text">#fffaf1</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c10_02"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Chardon</div>
+                  <div class="colour_title_text">#fff3f1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_colour">
+          <div class="fp_title_wrap">
+            <h4 class="fp_h3">Typograhy Palette</h4>
+            <h6 class="fp_h6">Grey Colours</h6>
+          </div>
+          <div class="colour_wrap_main">
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c11"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Downriver</div>
+                  <div class="colour_title_text">#0a1f44</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c12"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Port Gore</div>
+                  <div class="colour_title_text">#4e5d78</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c13"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Regent Gray</div>
+                  <div class="colour_title_text">#8a94a6</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c14"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Cadet Blue</div>
+                  <div class="colour_title_text">#b0b7c3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_colour">
+          <div class="fp_title_wrap">
+            <h4 class="fp_h3">Typograhy Palette</h4>
+            <h6 class="fp_h6">Neutral Tone</h6>
+          </div>
+          <div class="colour_wrap_main">
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c15"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Ghost</div>
+                  <div class="colour_title_text">#c1c7d0</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c16"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Athens Gray</div>
+                  <div class="colour_title_text">#ebecf0</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c17"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">Casper</div>
+                  <div class="colour_title_text">#fafbfc</div>
+                </div>
+              </div>
+            </div>
+            <div class="colour_wrapper">
+              <div class="colour_wrap">
+                <div class="colour_block c18"></div>
+                <div class="colour_block_text w-clearfix">
+                  <div class="colour_title">White</div>
+                  <div class="colour_title_text">#ffffff</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Heading" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h2 class="lnd_content_h1">Typography Styles<span class="lnd_highlight"></span></h2>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <div class="details_type_wrap">
+            <div class="fp_title_wrap">
+              <h4 class="fp_h3">Headings</h4>
+              <h6 class="fp_h6">Typography - Inter Bold</h6>
+            </div>
+            <div class="typograhy_wrap">
+              <h1>Aa Bb Cc Dd Ee</h1>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Heading 1</div>
+                  <div class="details_type_02">55px</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="typograhy_wrap">
+              <h2>Aa Bb Cc Dd Ee</h2>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Heading 2</div>
+                  <div class="details_type_02">44px</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="typograhy_wrap">
+              <h3>Aa Bb Cc Dd Ee</h3>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Heading 3</div>
+                  <div class="details_type_02">36px</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="typograhy_wrap">
+              <h4>Aa Bb Cc Dd Ee</h4>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Heading 4</div>
+                  <div class="details_type_02">34px</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="typograhy_wrap">
+              <h5>Aa Bb Cc Dd Ee</h5>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Heading 5</div>
+                  <div class="details_type_02">28px</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="typograhy_wrap">
+              <h6>Aa Bb Cc Dd Ee</h6>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Heading 6</div>
+                  <div class="details_type_02">24px</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="fp_title_wrap">
+            <h4 class="fp_h3">Body Copy</h4>
+            <h6 class="fp_h6">Typography - Inter</h6>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="p1">Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.</p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Paragraph Large</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="p2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.</p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Paragraph Normal</div>
+                <div class="details_type_02">16px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.</p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Paragraph Small</div>
+                <div class="details_type_02">14px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="p4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.</p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Detail Messages</div>
+                <div class="details_type_02">12px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Quotes</h2>
+            <h6 class="fp_h6">Typography - Inter</h6>
+          </div>
+          <div class="typograhy_wrap">
+            <blockquote>The ultimate Interface component kit built to create harmony across your products.</blockquote>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Plain Quote Block</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <blockquote class="q2">The ultimate Interface component kit built to create harmony across your products.</blockquote>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Additional Detail Messages</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Additional Copy Elements</h2>
+            <h6 class="fp_h6">Typography - San Francisco</h6>
+          </div>
+          <div class="typograhy_wrap">
+            <ul role="list">
+              <li>
+                <div>Example Item 1</div>
+              </li>
+              <li>
+                <div>Example Item 2</div>
+              </li>
+              <li>
+                <div>Example Item 3</div>
+              </li>
+            </ul>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">List Items - Dots</div>
+                <div class="details_type_02">16px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <ul role="list" class="l2">
+              <li>
+                <div>Example Item 1</div>
+              </li>
+              <li>
+                <div>Example Item 2</div>
+              </li>
+              <li>
+                <div>Example Item 3</div>
+              </li>
+            </ul>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">List Items - Numbers</div>
+                <div class="details_type_02">16px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <ul role="list" class="l3">
+              <li>
+                <div>Example Item 1</div>
+              </li>
+              <li>
+                <div>Example Item 2</div>
+              </li>
+              <li>
+                <div>Example Item 3</div>
+              </li>
+            </ul>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">List Items - Letters</div>
+                <div class="details_type_02">16px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Additional Copy Elements</h2>
+            <h6 class="fp_h6">Typography - San Francisco</h6>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="bold"><strong>This line rendered as bold text.</strong></p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Bold Text</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="em"><em>This line rendered as italicized text.</em></p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Italicized Text</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="delete">This line of text is meant to be treated as deleted text.</p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Deleted Text</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="underline">This line of text is meant to be treated as deleted text.</p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Underline Text</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+          <div class="typograhy_wrap">
+            <p class="highlight">You can use the mark tag to <span class="mark">highlight</span> text.</p>
+            <div class="details_wrap">
+              <div class="details_type_wrap w-clearfix">
+                <div class="details_type">Highlight Text</div>
+                <div class="details_type_02">18px</div>
+              </div>
+              <div class="details_line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Shadows" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h3 class="lnd_content_h1">Elevation &amp; Shadows<span class="lnd_highlight"></span></h3>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Elevation and Shadows</h2>
+            <h6 class="fp_h6">Outter Shadow, Inner Shadow</h6>
+          </div>
+          <div class="shadow_wrap">
+            <div class="shadow_column">
+              <div class="s1_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S1</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="shadow_column">
+              <div class="s2_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S2</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="shadow_column">
+              <div class="s3_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S3</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="shadow_column">
+              <div class="s4_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S4</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="shadow_column">
+              <div class="s5_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S5</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow_wrap">
+            <div class="shadow_column">
+              <div class="is1_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S1</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="shadow_column">
+              <div class="is2_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S2</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="shadow_column">
+              <div class="is3_shadow"></div>
+              <div class="details_wrap_02">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Shadow</div>
+                  <div class="details_type_02">S3</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Avatar" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h1 class="lnd_content_h1">Avatars<span class="lnd_highlight"></span></h1>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Primary Buttons</h2>
+            <h6 class="fp_h6">Corner Radius</h6>
+          </div>
+          <div id="S_Avatar" class="element_wrap_btm">
+            <div class="avatar_wrap">
+              <div class="avatar_p_96"></div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">X Large</div>
+                <div class="details_type_03">96px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_p_40"></div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">Large</div>
+                <div class="details_type_03">40px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_p_32"></div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">Medium</div>
+                <div class="details_type_03">32px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_p_24"></div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">Small</div>
+                <div class="details_type_03">24px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_p_16"></div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">X Small</div>
+                <div class="details_type_03">18px</div>
+              </div>
+            </div>
+          </div>
+          <div class="element_wrap_btm">
+            <div class="avatar_wrap">
+              <div class="avatar_d_96">
+                <h1 class="tb_text">TB</h1>
+              </div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">X Large</div>
+                <div class="details_type_03">96px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_d_40">
+                <h1 class="tb_text_2">TB</h1>
+              </div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">Large</div>
+                <div class="details_type_03">40px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_d_32">
+                <h1 class="tb_text_03">T</h1>
+              </div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">Medium</div>
+                <div class="details_type_03">32px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_d_24">
+                <h1 class="tb_text_04">T</h1>
+              </div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">Small</div>
+                <div class="details_type_03">24px</div>
+              </div>
+            </div>
+            <div class="avatar_wrap">
+              <div class="avatar_d_16">
+                <h1 class="tb_text_05">T</h1>
+              </div>
+              <div class="details_wrap_03 w-clearfix">
+                <div class="details_type">X Small</div>
+                <div class="details_type_03">18px</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Button" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h1 class="lnd_content_h1">Buttons<span class="lnd_highlight"></span></h1>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Primary Buttons</h2>
+            <h6 class="fp_h6">Corner Radius</h6>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button_p w-button">Primary</a></div>
+            <div class="button_wrap"><a href="#" class="button_default w-button">Default</a></div>
+            <div class="button_wrap">
+              <div data-delay="0" class="button_dropdown w-dropdown">
+                <div class="button_drop w-dropdown-toggle">
+                  <div class="w-icon-dropdown-toggle"></div>
+                  <div>Dropdown</div>
+                </div>
+                <nav class="dropdown_list w-dropdown-list"><a href="#" class="dropdown_link w-dropdown-link">Example Link</a><a href="#" class="dropdown_link w-dropdown-link">Example Link</a><a href="#" class="dropdown_link w-dropdown-link">Example Link</a></nav>
+              </div>
+            </div>
+            <div class="button_wrap"><a href="#" class="button_disable w-button">Disable</a></div>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button_info w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_success w-button">Success</a></div>
+            <div class="button_wrap"><a href="#" class="button_warning w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_error w-button">Delete</a></div>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button_info_d w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_success_d w-button">Success</a></div>
+            <div class="button_wrap"><a href="#" class="button_warning_d w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_error_d w-button">Delete</a></div>
+          </div>
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Primary Buttons</h2>
+            <h6 class="fp_h6">Rounded</h6>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button-p-round w-button">Primary</a></div>
+            <div class="button_wrap"><a href="#" class="button-d-round w-button">Default</a></div>
+            <div class="button_wrap">
+              <div data-delay="0" class="dropdown-round w-dropdown">
+                <div class="dropdown_round w-dropdown-toggle">
+                  <div class="w-icon-dropdown-toggle"></div>
+                  <div>Dropdown</div>
+                </div>
+                <nav class="dropdown_list w-dropdown-list"><a href="#" class="dropdown_link w-dropdown-link">Example Link</a><a href="#" class="dropdown_link w-dropdown-link">Example Link</a><a href="#" class="dropdown_link w-dropdown-link">Example Link</a></nav>
+              </div>
+            </div>
+            <div class="button_wrap"><a href="#" class="button_disable_round w-button">Disable</a></div>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button_info_round w-button">Primary</a></div>
+            <div class="button_wrap"><a href="#" class="button_success_round w-button">Success</a></div>
+            <div class="button_wrap"><a href="#" class="button_wraning_round w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_error_round w-button">Delete</a></div>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button_info_round_d w-button">Primary</a></div>
+            <div class="button_wrap"><a href="#" class="button_success_round_d w-button">Success</a></div>
+            <div class="button_wrap"><a href="#" class="button_warning_round_d w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_error_round_d w-button">Delete</a></div>
+          </div>
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Secondary Buttons</h2>
+            <h6 class="fp_h6">Line Button</h6>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button_p_secondary w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_s_secondary w-button">Success</a></div>
+            <div class="button_wrap"><a href="#" class="button_w_secondary w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_e_secondary w-button">Delete</a></div>
+          </div>
+          <div class="element_wrap">
+            <div class="button_wrap"><a href="#" class="button_p_secondary_r w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_s_secondary_r w-button">Success</a></div>
+            <div class="button_wrap"><a href="#" class="button_w_secondary_r w-button">Warning</a></div>
+            <div class="button_wrap"><a href="#" class="button_e_secondary_r w-button">Delete</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Form" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h1 class="lnd_content_h1">Field Elements<span class="lnd_highlight"></span></h1>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Form Fields</h2>
+            <h6 class="fp_h6">Input Fields</h6>
+          </div>
+          <div class="w-form">
+            <form id="email-form" name="email-form" data-name="Email Form">
+              <div class="form_column_wrap">
+                <div class="fp_component_wrap">
+                  <div class="form_element_wrap"><input type="text" class="input_disabled w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Disabled Input Field" id="INPUT-2"></div>
+                  <div class="form_element_wrap"><input type="text" class="input w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Standard Input Field" id="INPUT-2"></div>
+                  <div class="form_element_wrap"><input type="text" class="input_focused w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Focused Field" id="INPUT-2"></div>
+                  <div class="form_element_wrap">
+                    <div class="alert_wrap"><input type="text" class="input_success w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Success Field" id="INPUT-2"><img src="images/checked.svg" alt="" class="alert_image"></div>
+                  </div>
+                  <div class="form_element_wrap">
+                    <div class="alert_wrap"><input type="text" class="input_warning w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Error Input" id="INPUT-2"><img src="images/warning.svg" alt="" class="alert_image"></div>
+                  </div>
+                  <div class="form_element_wrap">
+                    <div class="alert_wrap"><input type="text" class="input_error w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Error Input" id="INPUT-2"><img src="images/error.svg" width="17" alt="" class="alert_image"></div>
+                  </div>
+                  <div class="fp_title_wrap">
+                    <h2 class="fp_h3">Field Elements</h2>
+                    <h6 class="fp_h6">Input Fields</h6>
+                  </div>
+                </div>
+                <div class="fp_component_wrap">
+                  <div class="form_element_wrap"><textarea id="INPUT-2" name="INPUT-2" placeholder="Long Input Field" maxlength="5000" data-name="INPUT 2" class="plain_input_long w-input"></textarea></div>
+                  <div class="form_element_wrap"><textarea id="INPUT-2" name="INPUT-2" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry." maxlength="5000" data-name="INPUT 2" class="focused_input_long w-input"></textarea></div>
+                  <div class="form_element_wrap"><textarea id="INPUT-2" name="INPUT-2" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry." maxlength="5000" data-name="INPUT 2" class="warning_input_long w-input"></textarea></div>
+                </div>
+              </div>
+              <div class="form_column_wrap">
+                <div class="fp_component_wrap">
+                  <div class="form_element_wrap"><label for="INPUT-3" class="input_title">Field Label</label><input type="text" class="input_disabled w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Disabled Input Field" id="INPUT-2">
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                  <div class="form_element_wrap"><label for="INPUT-3" class="input_title">Field Label</label><input type="text" class="input w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Standard Input Field" id="INPUT-2">
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                  <div class="form_element_wrap"><label for="INPUT-3" class="input_title">Field Label</label><input type="text" class="input_focused w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Focused Field" id="INPUT-2">
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                  <div class="form_element_wrap"><label for="name-3" class="input_title">Field Label</label>
+                    <div class="alert_wrap"><input type="text" class="input_success w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Success Field" id="INPUT-2"><img src="images/checked.svg" alt="" class="alert_image"></div>
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                  <div class="form_element_wrap"><label for="name-3" class="input_title">Field Label</label>
+                    <div class="alert_wrap"><input type="text" class="input_warning w-input" maxlength="256" name="INPUT-2" data-name="INPUT 2" placeholder="Error Input" id="INPUT-2"><img src="images/warning.svg" alt="" class="alert_image"></div>
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                  <div class="form_element_wrap"><label for="name-3" class="input_title">Field Label</label>
+                    <div class="paypal_input"><input type="text" id="name-2" name="name-2" data-name="Name 2" maxlength="256" class="input_paypal w-input"><img src="images/2000px-PayPal.svg_12000px-PayPal.svg.png" width="70" alt="" class="paypal"></div>
+                  </div>
+                  <div class="form_element_wrap"><label for="name-3" class="input_title">Field Label</label>
+                    <div class="input_payment_wrap"><input type="text" id="name-2" name="name-2" data-name="Name 2" maxlength="256" class="input_payment w-input"><img src="images/payments.png" width="70" srcset="images/payments-p-500.png 500w, images/payments.png 677w" sizes="70px" alt="" class="paypal"></div>
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                </div>
+                <div class="fp_component_wrap">
+                  <div class="form_element_wrap"><label for="INPUT-3" class="input_title">Field Label</label><textarea id="INPUT-2" name="INPUT-2" placeholder="Long Input Field" maxlength="5000" data-name="INPUT 2" class="plain_input_long w-input"></textarea>
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                  <div class="form_element_wrap"><label for="INPUT-3" class="input_title">Field Label</label><textarea id="INPUT-2" name="INPUT-2" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry." maxlength="5000" data-name="INPUT 2" class="focused_input_long w-input"></textarea>
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                  <div class="form_element_wrap"><label for="INPUT-3" class="input_title">Field Label</label><textarea id="INPUT-2" name="INPUT-2" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry." maxlength="5000" data-name="INPUT 2" class="warning_input_long w-input"></textarea>
+                    <div class="text_instruction">Intruction text here</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Alerts" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h1 class="lnd_content_h1">Alert Bars<span class="lnd_highlight"></span></h1>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Notification</h2>
+            <h6 class="fp_h6">Input Fields</h6>
+          </div>
+        </div>
+        <div class="container_elements">
+          <div class="column w-row">
+            <div class="w-col w-col-4 w-col-stack">
+              <div class="alert_default">
+                <div class="alert_content_wrap"><img src="images/alert-circle-red.svg" width="16" alt="" class="alert_icon">
+                  <div class="alert_line"></div>
+                  <div class="paragraph-2-a">Looks like we&#x27;re having trouble</div>
+                </div><img src="images/x_1.svg" width="10" alt=""></div>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Default Alert Error</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="w-col w-col-4 w-col-stack">
+              <div class="alert_warning">
+                <div class="alert_content_wrap"><img src="images/alert-circle.svg" width="16" alt="" class="alert_icon">
+                  <div class="alert_line_2"></div>
+                  <div class="paragraph-2-a">Looks like we&#x27;re having trouble</div>
+                </div><img src="images/x_dark.svg" width="10" alt=""></div>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Warning Alert</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="w-col w-col-4 w-col-stack">
+              <div class="alert_error">
+                <div class="alert_content_wrap"><img src="images/alert-circle-white.svg" width="16" alt="" class="alert_icon">
+                  <div class="alert_line_2"></div>
+                  <div class="paragraph-2-a white-text">Looks like we&#x27;re having trouble</div>
+                </div><img src="images/x_white.svg" width="10" alt=""></div>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Error Alert</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column w-row">
+            <div class="w-col w-col-4 w-col-stack">
+              <div class="alert_default">
+                <div class="alert_content_wrap"><img src="images/check-green.svg" width="14" alt="" class="alert_icon">
+                  <div class="alert_line"></div>
+                  <div class="paragraph-2-a">Your information has been saved.</div>
+                </div><img src="images/x_1.svg" width="10" alt=""></div>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Default Alert Check</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="w-col w-col-4 w-col-stack">
+              <div class="alert_7">
+                <div class="alert_content_wrap"><img src="images/check-white.svg" width="14" alt="" class="alert_icon">
+                  <div class="alert_line_2"></div>
+                  <div class="paragraph-2-a white-text">Your information has been saved.</div>
+                </div><img src="images/x_white.svg" width="10" alt=""></div>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Default Alert Grey</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+            <div class="w-col w-col-4 w-col-stack">
+              <div class="alert_6">
+                <div class="alert_content_wrap"><img src="images/check-white.svg" width="14" alt="" class="alert_icon">
+                  <div class="alert_line_2"></div>
+                  <div class="paragraph-2-a white-text">Your information has been saved.</div>
+                </div><img src="images/x_white.svg" width="10" alt=""></div>
+              <div class="details_wrap">
+                <div class="details_type_wrap w-clearfix">
+                  <div class="details_type">Confirm Alert</div>
+                </div>
+                <div class="details_line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Badges" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h1 class="lnd_content_h1">Badges<span class="lnd_highlight"></span></h1>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+      <div class="lnd_page_content">
+        <div class="container_elements">
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Pill Badges</h2>
+            <h6 class="fp_h6">Corner Radius</h6>
+          </div>
+          <div class="element_wrap">
+            <div class="badge_wrap">
+              <div class="pill_default">
+                <div class="pill_text_default">5</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_purple">
+                <div class="pill_text_white">32</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_success">
+                <div class="pill_text_white">32</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_warning">
+                <div class="pill_text_white">32</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_error">
+                <div class="pill_text_white">32</div>
+              </div>
+            </div>
+          </div>
+          <div class="element_wrap">
+            <div class="badge_wrap">
+              <div class="pill_default">
+                <div class="pill_text_default">5</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_purple_02">
+                <div class="pill_text_purple">32</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_success_02">
+                <div class="pill_text_green">3</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_warning_02">
+                <div class="pill_text_warning">22</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="pill_error_02">
+                <div class="pill_text_error">3</div>
+              </div>
+            </div>
+          </div>
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Contextual Badges</h2>
+            <h6 class="fp_h6">Corner Radius</h6>
+          </div>
+          <div class="element_wrap">
+            <div class="badge_wrap">
+              <div class="badge_default">
+                <div class="badge_text_default">Default</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_purple">
+                <div class="badge_text_white">Primary</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_success">
+                <div class="badge_text_white">Success</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_warning">
+                <div class="badge_text_white">Warning</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_error">
+                <div class="badge_text_white">Error</div>
+              </div>
+            </div>
+          </div>
+          <div class="element_wrap">
+            <div class="badge_wrap">
+              <div class="badge_default">
+                <div class="pill_text_default">Default</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_p_2">
+                <div class="pill_text_purple">Primary</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_s2">
+                <div class="pill_text_gressen">Success</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_w2">
+                <div class="pill_text_gressen">Success</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="badge_e2">
+                <div class="pill_text_gressen">Success</div>
+              </div>
+            </div>
+          </div>
+          <div class="fp_title_wrap">
+            <h2 class="fp_h3">Version Control</h2>
+            <h6 class="fp_h6">Corner Radius</h6>
+          </div>
+          <div class="element_wrap">
+            <div class="badge_wrap">
+              <div class="tag_d">
+                <div class="tag_circle_d">
+                  <div class="tag_text">1</div>
+                </div>
+                <div class="tag_d_text">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag_p">
+                <div class="tag_circle_p">
+                  <div class="tag_text">1</div>
+                </div>
+                <div class="tag_p_text">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag-s">
+                <div class="div_block_09">
+                  <div class="tag_text">1</div>
+                </div>
+                <div class="tag_s_text">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag_w">
+                <div class="tag-cirle-w">
+                  <div class="tag_text">1</div>
+                </div>
+                <div class="tag-w-text">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag-e">
+                <div class="tag-cirle-e">
+                  <div class="tag_text">1</div>
+                </div>
+                <div class="tag-e-text">Version 1.0</div>
+              </div>
+            </div>
+          </div>
+          <div class="element_wrap">
+            <div class="badge_wrap">
+              <div class="tag-d2">
+                <div class="tag-cirle-d2">
+                  <div class="tag_text_d2">1</div>
+                </div>
+                <div class="tag-d2-text">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag-p2">
+                <div class="tag-cirle-p2">
+                  <div class="tag_text_p2">1</div>
+                </div>
+                <div class="m11_tag_text_02">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag-s2">
+                <div class="tag-cirle-s2">
+                  <div class="tag_text_s2">1</div>
+                </div>
+                <div class="tag_d_text_02">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag-w2">
+                <div class="tag-cirle-w-02">
+                  <div class="tag_text_w2">1</div>
+                </div>
+                <div class="tag-w2-text">Version 1.0</div>
+              </div>
+            </div>
+            <div class="badge_wrap">
+              <div class="tag-e2">
+                <div class="tag-cirle-e-02">
+                  <div class="tag_text-_e2">1</div>
+                </div>
+                <div class="tag-w2-text">Version 1.0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="S_Icons" class="lnd_heading">
+        <div class="lnd_header_container">
+          <h1 class="lnd_content_h1">Icons<span class="lnd_highlight"></span></h1>
+          <div class="lnd_details">Looking for something else? <a href="https://forest-kit.webflow.io/#LND_started" class="lnd_heading_link">View the glossary</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ef927ccc93f2aca942d1c52" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/diginomaly-design-system.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
